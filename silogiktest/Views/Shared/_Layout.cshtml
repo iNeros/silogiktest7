@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>silogiktest</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.9.55/css/materialdesignicons.min.css">
+    </environment>
+    <environment exclude="Development">
+        <link href="~/css/app.css" type="text/css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/css/chunk-vendors.css" type="text/css" rel="stylesheet" asp-append-version="true" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.9.55/css/materialdesignicons.min.css">
+    </environment>
+</head>
+<body>
+    @RenderBody()
+
+    <environment include="Development">
+        <!-- Development JS -->
+        <script async src="~/js/app.js" asp-append-version="true"></script>
+        <script async src="~/js/chunk-vendors.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <!-- Production JS -->
+        <script async src="~/js/app.js" asp-append-version="true"></script>
+        <script async src="~/js/chunk-vendors.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("Scripts")
+</body>
+</html>
