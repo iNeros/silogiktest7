@@ -76,13 +76,13 @@ publish/
 secrets.json
 
 # === Node/Vue ===
-Client/node_modules/
-Client/dist/
-Client/.env
-Client/npm-debug.log*
-Client/yarn-debug.log*
-Client/yarn-error.log*
-Client/package-lock.json
+silogiktest/Client/node_modules/
+silogiktest/Client/dist/
+silogiktest/Client/.env
+silogiktest/Client/npm-debug.log*
+silogiktest/Client/yarn-debug.log*
+silogiktest/Client/yarn-error.log*
+silogiktest/Client/package-lock.json
 
 # === Sistema Operativo ===
 .DS_Store
