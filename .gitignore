@@ -62,6 +62,8 @@ obj/
 *.userosscache
 *.sln.docstates
 
+silogiktest/wwwroot/dir/
+
 # Archivos de configuracion temporales
 *.vspscc
 *.vssscc
@@ -83,6 +85,7 @@ silogiktest/Client/npm-debug.log*
 silogiktest/Client/yarn-debug.log*
 silogiktest/Client/yarn-error.log*
 silogiktest/Client/package-lock.json
+
 
 # === Sistema Operativo ===
 .DS_Store
